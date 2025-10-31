@@ -3,9 +3,9 @@
   --accent:#22c55e;
   --text:#0f172a;
   --muted:#6b7280;
-  --bg:#f7f8fb;
-  --card-bg:#ffffff;
-  --card-border:#e5e7eb;
+  --bg:#af6756;
+  --card-bg:#b0dcdc;
+  --card-border:#101010;
   --container-max:1100px;
   --gap:14px;
 }
@@ -17,7 +17,7 @@ body{
   padding:20px;
   font-family:"Inter", "Segoe UI", Roboto, Arial, sans-serif;
   color:var(--text);
-  background:linear-gradient(180deg,#fafafa 0%, #f3f4f6 100%);
+  background:linear-gradient(180deg,#fafafa 0%, #96746b 100%);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.4;
