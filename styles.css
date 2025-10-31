@@ -119,7 +119,7 @@ li{margin:6px 0;font-size:14px}
 }
 
 .btn.secondary{
-  background:linear-gradient(90deg,#fff,#fff);
+  background:linear-gradient(90deg,#fff,#60c613);
   color:#0f172a;
   border:1px solid var(--card-border);
 }
