@@ -15,7 +15,7 @@
 
     /* LEFT: sticky details */
     .left{ position:sticky; top:10mm; align-self:start; height:auto; overflow:visible; background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:14px; box-shadow:0 12px 28px rgba(0,0,0,.06); }
-    .pill{ background:linear-gradient(90deg,#0ea5e9,#22c55e); color:#0b0b0c; padding:8px 10px; border-radius:999px; font-weight:800; text-decoration:none; box-shadow:0 8px 18px #0ea5e944; overflow-wrap:anywhere; display:inline-block; }
+    .pill{ background:linear-gradient(90deg,#0ea5e9,#22c55e); color:#0b0b0c; padding:8px 10px; border-radius:999px; font-weight:800; text-decoration:none; box-shadow:0 8px 18px #0ea5e944; overflow-wrap:break-word; display:inline-block; }
     .title{ font-size:26px; font-weight:800; margin:8px 0 4px; }
     .sub{ color:var(--muted); font-size:13px; }
     .price{ font-size:20px; font-weight:900; margin-top:6px; }
@@ -26,15 +26,16 @@
     .cta{ display:flex; align-items:center; justify-content:space-between; gap:10px; border-top:1px dashed #d1d5db; padding-top:10px; margin-top:10px; }
     .btn{ background:#0ea5e9; color:#fff; padding:10px 12px; border-radius:10px; font-weight:800; text-decoration:none; }
 
-    /* RIGHT: scrollable gallery */
+    /* RIGHT: scrollable gallery (changed to vertical list of larger images with border and gaps) */
     .right{ height:auto; overflow:visible; background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:14px; box-shadow:0 12px 28px rgba(0,0,0,.06); }
-    .grid{ display:list-item; grid-template-columns: repeat(2, 1fr); gap:15px; }
-    .img{ width:100%; height:550px; object-fit:cover; border-radius:12px; display:block; box-shadow:0 10px 22px rgba(0,0,0,.08); filter:saturate(1.15) contrast(1.08) brightness(1.04); }
+    .grid{ display:flex; flex-direction:column; gap:14px; align-items:center; }
+    .img{ width:95%; height:700px; object-fit:cover; border-radius:14px; display:block; box-shadow:0 10px 22px rgba(0,0,0,.08); filter:saturate(1.15) contrast(1.08) brightness(1.04); border:6px solid #eef2f7; }
 
     @media print{
       body{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .left{ position:relative; top:auto; height:auto; overflow:visible; }
       .right{ height:auto; overflow:visible; }
+      .img{ height:500px; width:100%; border-width:4px; }
     }
   </style>
 </head>
